@@ -21,7 +21,9 @@
 
 <link rel="stylesheet" href="src/style.css" />
 <script src="https://kit.fontawesome.com/a0297db745.js" crossorigin="anonymous"></script>
-
+<!-- axios and typewriter imported -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> 
 
     <title>AI Limerick Generator</title>
 </head>
@@ -32,16 +34,16 @@
         
    
         <form>
-            <input type="text" class="input-textbox" 
+            <input type="text" class="input-textbox"  id="myLimerickSubject"
                 placeholder="Enter the subject of the limerick you want to generate" 
                 autofocus 
                 required
                 autocomplete="off"/>
-            <input class="submit-button" type="submit"/>
+            <input class="submit-button" type="submit" id="myLimerickButton"/>
 
         </form>
     </div>
-        <div class="limerick">
+        <div  id="myLimerick" class="limerick">
             Limerick will generate here
         </div>
      
