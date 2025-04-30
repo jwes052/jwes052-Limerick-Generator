@@ -19,12 +19,12 @@
     background-image: url(/images/alexander-grey-62vi3TG5EDg-unsplashmedium.jpg);
     background-size: cover;
     padding: 60px;
-    height: 100vh;
   }
   
   .page-banner-section h1 {
     font-size: 52px;
     font-weight: bold;
+    ;
   }
   
 
