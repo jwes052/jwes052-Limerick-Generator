@@ -1,4 +1,28 @@
-body {
-    background: #f4f5f0;
+  :root {
+    --main-color: #695f7a;
+    --secondary-color: #a3a5b4;
+    --app-tile-color: rgba(105, 95, 122, 0.6);
+    --default-font-family: "Merriweather", serif;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  body {
+    font-family: var(--default-font-family);
+    background-color: rgba(203, 183, 192, 0.4);
     text-align: center;
   }
+  
+  /*Page Banner CSS Styling*/
+  .page-banner-section {
+    text-align: center;
+    /*background: rgb(205, 205, 205);*/
+    background-image: url(/images/alexander-grey-62vi3TG5EDg-unsplashmedium.jpg);
+    background-size: cover;
+    padding: 60px;
+  }
+  
+  .page-banner-section h1 {
+    font-size: 52px;
+    font-weight: bold;
+  }
+  
