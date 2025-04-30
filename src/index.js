@@ -44,10 +44,13 @@ function displayLimerick(response) {
 function generateLimerick(event) {
     event.preventDefault();
   
+/*get the subject and assign it to a variable*/
+    let limerickSubject = document.querySelector("#myLimerickSubject");
+
     let apiKey = "1eb1e9a390fc1d4beo3ea647ft15a929";
     let context =
-      "You are a hilarious AI Assitant that writes limericks.Be polite, you are funny but not rude. The limewrick must be about what what is included in the subject form and should be provided in HTML format. Example: <p>this is the first line of the limerick</p> <p>this is the second line of the limerick</p>";
-    let prompt = "Write a funny limerick";
+      "You are a hilarious AI Assitant that writes limericks.Be polite, you are funny but not rude and should be provided in HTML format. Example: <p>this is the first line of the limerick</p> <p>this is the second line of the limerick</p>";
+    let prompt = `Write a funny limerick on the subject of ${limerickSubject.value}`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   
     let LimerickElement = document.querySelector("#myLimerick");
