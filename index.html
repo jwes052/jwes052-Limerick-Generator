@@ -28,20 +28,22 @@
 <body>
         <div class="page-banner-section">
             <H1 class="mb-3">AI Limerick Generator</H1>
-        </div>
+            <p class="mb-0">This is an AI limerick generator. Using the textbox below, let the AI come up with a funny limerick to tell to your friends.</p>
+        
    
         <form>
-            <input type="text" 
+            <input type="text" class="input-textbox" 
                 placeholder="Enter the subject of the limerick you want to generate" 
                 autofocus 
                 required
                 autocomplete="off"/>
-            <input type="submit"/>
-            <div id="limerick">
-                Limerick will generate here
-            </div>
-        </form>
+            <input class="submit-button" type="submit"/>
 
+        </form>
+    </div>
+        <div class="limerick">
+            Limerick will generate here
+        </div>
      
     <footer>
     This AI project was coded by
@@ -57,7 +59,9 @@
       <a href="https://graceful-rugelach-d6932b.netlify.app/" target="_blank"
         >hosted on Netlify</a
       >.
-
+      <br/>
+      Additional work by Jwes052 can be found on her 
+      <a href="https://elaborate-sunburst-146eeb.netlify.app/" target="_blank">portfolio website</a>.
     </footer>
 
     <script src="src/index.js"></script>
